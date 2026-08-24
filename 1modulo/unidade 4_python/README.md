@@ -1,17 +1,26 @@
+# Unidade 4: Preparação dos Dados com Python
 
-# Projeto PRF 2025 — Preparação dos Dados
+Esta unidade finaliza o módulo estruturando um pipeline completo de higienização de dados e engenharia de recursos com a biblioteca `pandas`.
 
-## Objetivo
-Preparar os dados de acidentes da PRF 2025 para análise exploratória, Power BI e árvore de 
-decisão explicável.
+---
 
-## Variável-alvo
-`acidente_fatal = 1` quando `mortos >= 1`; caso contrário, `acidente_fatal = 0`.
+## Escopo da Unidade
 
-## Bases geradas
-- `dados_tratados\base_analitica_prf_2025.csv`: base completa para EDA e Power BI.
-- `dados_tratados\base_modelavel_prf_2025.csv`: base para modelagem, sem data leakage.
+* **Pipeline de Engenharia de Dados**: Uso intensivo da biblioteca `pandas` para saneamento e transformação da base.
+* **Tratamento e Higienização**:
+  * Inspeção estrutural e mapeamento do dicionário de dados.
+  * Conversão de tipos de dados, tratamento de nulos, remoção de duplicidades e correção de inconsistências.
+  * Padronização textual de strings e gerenciamento de categorias.
+* **Engenharia de Variáveis (Feature Engineering)**:
+  * Criação de novas colunas baseadas em tempo, gravidade e localização geográfica.
+* **Arquitetura de Saída**:
+  * **Base Analítica Completa**: Otimizada para consumo direto em dashboards (Power BI / Looker Studio).
+  * **Base Modelável**: Filtrada e ajustada com técnicas para evitar o **Data Leakage** (vazamento de dados) antes do treinamento de modelos preditivos.
+  * Boas práticas de versionamento de código com Git/GitHub e reprodutibilidade de diretórios.
 
-## Observação metodológica
-A base modelável exclui mortos, feridos, total_vitimas, indice_gravidade e variáveis diretamente 
-derivadas do desfecho.
+---
+
+## Materiais Disponíveis
+
+* **Aula 4 - Analise de Dados - Preparação dos Dados com Python**: Conteúdo interativo e conceitos finais de engenharia.
+* **Notebooks Jupyter (`.ipynb`)**: Códigos passo a passo para a execução de toda a esteira de tratamento e modelagem das bases de saída.
